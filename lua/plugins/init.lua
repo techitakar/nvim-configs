@@ -40,9 +40,22 @@ return {
         "vimdoc",
         "html",
         "css",
+        "javascript",
+        "json",
+        "python",
+        "typescript",
+        "tsx",
+      },
+      highlight = {
+        enable = true,
+      },
+      fold = {
+        enable = true,
       },
     },
   },
-
   --custom plugins
+
+  -- Toggle folding with Shift+z
+  vim.api.nvim_set_keymap("n", "Z", ":set wrap!<CR>", { noremap = true, silent = true }),
 }

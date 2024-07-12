@@ -9,6 +9,8 @@ $ git clone https://github.com/techitakar/nvim-configs ~/.config/nvim && nvim
 ```
 
 - Install syntax Highlight for preffered language: TSInstall typescript
+- :MasonInstallAll to install the flagged plugins
+- :checkhealth to see of everything is working properly
 
 ## Removal
 
