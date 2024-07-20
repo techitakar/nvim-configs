@@ -37,3 +37,6 @@ require "nvchad.autocmds"
 vim.schedule(function()
   require "mappings"
 end)
+
+--Custom configs
+vim.g.codeium_disable_bindings = 1
