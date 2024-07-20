@@ -49,6 +49,9 @@ return {
       highlight = {
         enable = true,
       },
+      indent = {
+        enable = true,
+      },
       fold = {
         enable = true,
       },
@@ -74,6 +77,14 @@ return {
     end,
     event = "BufEnter",
   }, --run :Codeium Auth
+
+  {
+    "windwp/nvim-ts-autotag",
+    config = function()
+      require("nvim-ts-autotag").setup()
+    end,
+    after = "nvim-treesitter",
+  },
 
   -- Toggle folding with Shift+z
   vim.api.nvim_set_keymap("n", "Z", ":set wrap!<CR>", { noremap = true, silent = true }),
