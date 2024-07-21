@@ -67,8 +67,11 @@ return {
 
   {
     "windwp/nvim-ts-autotag",
+    event = { "BufRead", "BufNewFile" },
     config = function()
-      require("nvim-ts-autotag").setup()
+      require("nvim-ts-autotag").setup {
+        filetypes = { "html", "javascript", "typescript", "tsx", "vue" }, -- Add or adjust file types
+      }
     end,
     after = "nvim-treesitter",
   },
