@@ -37,11 +37,3 @@ require "nvchad.autocmds"
 vim.schedule(function()
   require "mappings"
 end)
-
---Custom configs
-vim.g.codeium_disable_bindings = 1
-
-vim.o.foldmethod = "expr"
-vim.o.foldexpr = "nvim_treesitter#foldexpr()"
-vim.o.foldlevel = 99 -- Open all folds by default
-vim.o.foldenable = true -- Enable folding
