@@ -5,7 +5,7 @@ Cutom configs for nvim. All the required basics are there: telescope, prettier, 
 ## Installation
 
 ```
-$ git clone https://github.com/techitakar/nvim-configs ~/.config/nvim && nvim
+git clone https://github.com/techitakar/nvim-configs ~/.config/nvim && nvim
 ```
 
 - Install syntax Highlight for preffered language: TSInstall typescript
@@ -19,6 +19,3 @@ rm -rf ~/.config/nvim
 rm -rf ~/.local/state/nvim
 rm -rf ~/.local/share/nvim
 ```
-
-Don't you dare touch the dot files
-![image](./cat.jpg)
