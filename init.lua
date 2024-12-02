@@ -10,6 +10,22 @@ if not vim.loop.fs_stat(lazypath) then
 end
 
 vim.opt.rtp:prepend(lazypath)
+vim.opt.clipboard = "unnamedplus"
+
+-- only for ssh server since no x display server installed
+vim.g.clipboard = {
+  name = "wl-clipboard",
+  copy = {
+    ["+"] = "wl-copy",
+    ["*"] = "wl-copy",
+  },
+  paste = {
+    ["+"] = "wl-paste",
+    ["*"] = "wl-paste",
+  },
+  cache_enabled = true,
+}
+-- till here
 
 local lazy_config = require "configs.lazy"
 
